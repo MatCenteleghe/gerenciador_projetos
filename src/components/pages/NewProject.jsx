@@ -9,7 +9,7 @@ function NewProject() {
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
-  const apiURL = import.meta.env.VITE_APP_API_URL;
+  const apiURL = "https://gerenciador-projetos-api.onrender.com";
 
   function createPost(project) {
     //Inicializar o custo e serviços
