@@ -8,7 +8,8 @@ function NewProject() {
   const history = useNavigate();
   const [message, setMessage] = useState();
   const [type, setType] = useState();
-  const apiURL = process.env.REACT_APP_API_URL;
+
+  const apiURL = process.env.VITE_APP_API_URL;
 
   function createPost(project) {
     //Inicializar o custo e serviços

@@ -16,7 +16,7 @@ function Projects() {
   const [search, setSearch] = useState("");
   const location = useLocation();
 
-  const apiURL = process.env.REACT_APP_API_URL;
+  const apiURL = process.env.VITE_APP_API_URL;
 
   let message = "";
   if (location.state) {
@@ -36,7 +36,7 @@ function Projects() {
         })
         .catch((err) => console.log(err));
     }, 300);
-  }, [apiURL]);
+  }, []);
 
   function removeProject(id) {
     setProjectMessage("");

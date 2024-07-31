@@ -22,7 +22,7 @@ function SingleProject() {
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
-  const apiURL = process.env.REACT_APP_API_URL;
+  const apiURL = process.env.VITE_APP_API_URL;
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,7 +39,7 @@ function SingleProject() {
         })
         .catch((err) => console.log(err));
     }, 300);
-  }, [id, apiURL]);
+  }, [id]);
 
   function editPost(singleProject) {
     //Validação de Orçamento
