@@ -1,0 +1,33 @@
+.container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.min-height {
+  min-height: 85vh;
+}
+.start {
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+}
+.column {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+@media (min-height: 1023px) {
+  .min-height {
+    min-height: auto;
+  }
+}
+@media (max-width: 558px) {
+  .container {
+    justify-content: center;
+    width: 100%;
+  }
+}

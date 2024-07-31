@@ -1,0 +1,40 @@
+.home_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home_container h1 {
+  font-size: 30px;
+  margin: 40px 0px;
+}
+.home_container h1 span {
+  color: #dc9405;
+  padding: 5px 10px;
+  background-color: #222;
+  border-radius: 5px;
+}
+.home_container p {
+  margin-bottom: 20px;
+  color: #7b7b7b;
+}
+.home_container img {
+  width: 350px;
+  margin: 60px 0;
+}
+@media (min-height: 1023px) {
+  .home_container {
+    justify-content: start;
+  }
+}
+@media (max-width: 470px) {
+  .home_container h1 {
+    font-size: 20px;
+  }
+  .home_container p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(48, 48, 48) 98%);
+  padding: 1em;
+}
+.navbar img {
+  margin-left: 10px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.list li {
+  margin-right: 35px;
+}
+.list > li a {
+  color: #fff;
+  text-decoration: none;
+}
+.list > li a:hover {
+  color: #dc9405;
+}

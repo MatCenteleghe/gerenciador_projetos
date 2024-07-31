@@ -1,0 +1,19 @@
+.btn {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.btn:hover {
+  color: #dc9405;
+}
+@media (max-width: 450px) {
+  .btn {
+    text-align: center;
+  }
+}

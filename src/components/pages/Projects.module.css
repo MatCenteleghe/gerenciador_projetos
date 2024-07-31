@@ -1,0 +1,16 @@
+.project_container {
+  padding: 15px;
+  width: 100%;
+}
+.title_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+@media (max-width: 361px) {
+  .title_container h1 {
+    font-size: 25px;
+  }
+}
