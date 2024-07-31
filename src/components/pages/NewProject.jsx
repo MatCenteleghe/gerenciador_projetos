@@ -9,7 +9,7 @@ function NewProject() {
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
-  const apiURL = process.env.VITE_APP_API_URL;
+  const apiURL = import.meta.env.VITE_APP_API_URL;
 
   function createPost(project) {
     //Inicializar o custo e serviços
