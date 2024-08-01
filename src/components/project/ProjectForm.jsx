@@ -5,9 +5,11 @@ import Select from "../form/Select";
 import SubmitButton from "../form/SubmitButton";
 import styles from "./ProjectForm.module.css";
 
-function ProjectForm({ handleSubmit, btnText, projectData, apiURL }) {
+function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
   const [project, setProject] = useState(projectData || {});
+
+  const apiURL = "https://gerenciador-projetos-api.onrender.com";
 
   useEffect(() => {
     fetch(`${apiURL}/categories`, {

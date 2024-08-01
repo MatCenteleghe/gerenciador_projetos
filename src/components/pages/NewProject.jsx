@@ -44,11 +44,7 @@ function NewProject() {
       <Message type={type} msg={message} />
       <h1>Criar Projeto</h1>
       <p>Crie seu projeto para depois adicionar os serviços</p>
-      <ProjectForm
-        handleSubmit={createPost}
-        btnText="Criar Projeto"
-        apiURL={apiURL}
-      />
+      <ProjectForm handleSubmit={createPost} btnText="Criar Projeto" />
     </div>
   );
 }
