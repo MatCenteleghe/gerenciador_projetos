@@ -9,3 +9,9 @@
 .newproject_container p {
   color: #7b7b7b;
 }
+
+.category_check {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
+}
