@@ -67,8 +67,8 @@ function SingleProject() {
   }
 
   function createService() {
+    setMessage("");
     //Último serviço
-
     const lastService =
       singleProject.services[singleProject.services.length - 1];
     lastService.id = uuidv4();
@@ -104,6 +104,8 @@ function SingleProject() {
         setShowServiceForm(false);
       })
       .catch((err) => console.log(err));
+    setMessage("Serviço adicionado com sucesso");
+    setType("success");
   }
 
   function removeService(id, cost) {
