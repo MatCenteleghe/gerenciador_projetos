@@ -16,7 +16,7 @@ function Projects() {
   const [search, setSearch] = useState("");
   const location = useLocation();
 
-  const apiURL = process.env.VITE_API_URL;
+  const apiURL = import.meta.env.VITE_API_URL;
 
   let message = "";
   if (location.state) {

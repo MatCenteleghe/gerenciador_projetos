@@ -9,7 +9,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
   const [project, setProject] = useState(projectData || {});
 
-  const apiURL = process.env.VITE_API_URL;
+  const apiURL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     fetch(`${apiURL}/categories`, {
