@@ -22,7 +22,7 @@ function SingleProject() {
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
-  const apiURL = "https://gerenciador-projetos-api.onrender.com";
+  const apiURL = process.env.VITE_API_URL;
 
   useEffect(() => {
     setTimeout(() => {
@@ -138,6 +138,7 @@ function SingleProject() {
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
   }
+
   function toggleServiceForm() {
     setShowServiceForm(!showServiceForm);
   }

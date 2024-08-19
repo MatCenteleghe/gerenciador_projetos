@@ -16,7 +16,7 @@ function Projects() {
   const [search, setSearch] = useState("");
   const location = useLocation();
 
-  const apiURL = "https://gerenciador-projetos-api.onrender.com";
+  const apiURL = process.env.VITE_API_URL;
 
   let message = "";
   if (location.state) {

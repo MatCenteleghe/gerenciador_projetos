@@ -9,7 +9,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
   const [project, setProject] = useState(projectData || {});
 
-  const apiURL = "https://gerenciador-projetos-api.onrender.com";
+  const apiURL = process.env.VITE_API_URL;
 
   useEffect(() => {
     fetch(`${apiURL}/categories`, {

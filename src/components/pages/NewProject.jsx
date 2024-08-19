@@ -12,7 +12,7 @@ function NewProject() {
   const [type, setType] = useState();
   const [categories, setCategories] = useState([]);
 
-  const apiURL = "https://gerenciador-projetos-api.onrender.com";
+  const apiURL = process.env.VITE_API_URL;
 
   useEffect(() => {
     fetch(`${apiURL}/categories`, {
